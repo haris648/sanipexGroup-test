@@ -55,3 +55,11 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #eaeaea;
 }
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hide-scrollbar {
+    scrollbar-color: #d1d5db transparent;
+}

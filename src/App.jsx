@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { BRANDS } from './data/brands';
 import BrandList from './components/BrandList';
 import Header from './components/Header';
+import Filters from './components/Filters';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -61,6 +62,16 @@ function App() {
             </p>
           </div>
         </div>
+
+        <Filters 
+          searchTerm={searchTerm} 
+          setSearchTerm={setSearchTerm}
+          activeLetter={activeLetter}
+          setActiveLetter={setActiveLetter}
+          selectedCategories={selectedCategories}
+          setSelectedCategories={setSelectedCategories}
+          availableLetters={availableLetters}
+        />
 
         <BrandList groupedBrands={groupedBrands} />
       </main>
