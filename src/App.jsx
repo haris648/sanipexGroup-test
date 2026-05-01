@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { BRANDS } from './data/brands';
 import BrandList from './components/BrandList';
+import Header from './components/Header';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -46,7 +47,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-black selection:bg-black selection:text-white">
       
-      
+      <Header />
       <main className="pb-32">
         
         <div className="bg-white px-4 md:px-8 pt-16 pb-8 border-b border-gray-50">
