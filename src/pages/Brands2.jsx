@@ -68,7 +68,7 @@ function Brands2() {
 
       <main className="pb-25">
         <div className="bg-white px-4 md:px-8 pt-16 pb-8 border-b border-gray-50">
-          <div className="max-w-7xl mx-auto text-center space-y-4">
+          <div className="max-w-7xl mx-auto text-center space-y-4 hero-fade-in-down-delay">
             <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Our Partners</p>
             <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
               World-Class <span className="text-gray-300">Brands</span>

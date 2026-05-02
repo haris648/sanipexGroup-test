@@ -53,11 +53,11 @@ function Brands() {
       <main className="pb-25">
         <section
           style={{ backgroundImage: `url(${bgImage})` }}
-          className="relative px-4 md:px-8 pt-20 pb-20 border-b border-[#e8e1d9] bg-gradient-to-b from-[#f6f1ea] via-[#fbf9f6] to-[#fbf9f6] bg-cover bg-center"
+          className="relative px-4 md:px-8 pt-20 pb-20 border-b border-[#e8e1d9] bg-gradient-to-b from-[#f6f1ea] via-[#fbf9f6] to-[#fbf9f6] bg-fixed bg-no-repeat bg-top"
         >
           <div className="absolute inset-0 bg-[#fbf9f6]/70" aria-hidden="true"></div>
           <div className="relative z-10 max-w-7xl mx-auto grid gap-10 md:grid-cols-[1.2fr_0.8fr] items-center">
-            <div className="space-y-5">
+            <div className="space-y-5 hero-fade-in-left">
               <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-black">Brands Directory</p>
               <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
                 Crafted <span className="text-white">Collections</span>
