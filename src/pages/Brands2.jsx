@@ -87,7 +87,7 @@ function Brands2() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Markets</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-black">25+ yrs</p>
+                  <p className="text-2xl font-black">25+ years</p>
                   <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Expertise</p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ function Brands2() {
           </div>
         </section>
 
-        <div className="px-4 md:px-8 pt-6">
+        <div className="sticky top-[73px] z-[90] shadow-sm">
           <div className="max-w-7xl mx-auto bg-white/90 border border-[#efe6dc] rounded-2xl shadow-[0_12px_30px_rgba(31,27,24,0.06)]">
             <Filters
               searchTerm={searchTerm}
@@ -109,7 +109,7 @@ function Brands2() {
           </div>
         </div>
 
-        <BrandList groupedBrands={groupedBrands} />
+        <BrandList groupedBrands={groupedBrands} cardVariant="flip" />
       </main>
     </div>
   );

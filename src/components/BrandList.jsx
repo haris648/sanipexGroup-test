@@ -1,7 +1,7 @@
 import React from 'react';
 import BrandCard from './BrandCard';
 
-const BrandList = ({ groupedBrands }) => {
+const BrandList = ({ groupedBrands, cardVariant }) => {
   const letters = Object.keys(groupedBrands).sort();
 
   if (letters.length === 0) {
@@ -31,7 +31,7 @@ const BrandList = ({ groupedBrands }) => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {groupedBrands[letter].map(brand => (
-              <BrandCard key={brand.name} brand={brand} />
+              <BrandCard key={brand.name} brand={brand} variant={cardVariant} />
             ))}
           </div>
         </section>
