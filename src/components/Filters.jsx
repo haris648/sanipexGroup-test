@@ -119,12 +119,12 @@ const Filters = ({
                   key={letter}
                   disabled={isDisabled}
                   onClick={() => handleLetterClick(letter)}
-                  className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-sm text-xs font-bold transition-all duration-300 ${
+                  className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-md text-xs font-bold transition-all duration-300 ${
                     isActive
                       ? 'bg-black text-white'
                       : isDisabled
-                        ? 'text-gray-200 cursor-not-allowed'
-                        : 'text-gray-400 hover:text-black hover:bg-gray-100'
+                        ? 'text-gray-200 cursor-not-allowed bg-gray-50'
+                        : 'bg-gray-100 text-gray-400 hover:text-black hover:bg-gray-200'
                   }`}
                 >
                   {letter}
