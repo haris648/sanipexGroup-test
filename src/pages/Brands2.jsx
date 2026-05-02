@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BRANDS } from '../data/brands';
 import BrandList from '../components/BrandList';
 import Header from '../components/Header';
@@ -48,6 +49,23 @@ function Brands2() {
   return (
     <div className="min-h-screen bg-white font-sans text-black selection:bg-black selection:text-white">
       <Header />
+      
+      {/* Breadcrumb */}
+      <div className="bg-white px-4 md:px-8 pt-6 pb-2 border-b border-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <nav className="flex items-center gap-2 text-xs">
+            <Link 
+              to="/" 
+              className="text-gray-400 hover:text-black uppercase tracking-widest font-medium transition-colors"
+            >
+              Home
+            </Link>
+            <span className="text-gray-300">/</span>
+            <span className="text-black uppercase tracking-widest font-medium">Brands2</span>
+          </nav>
+        </div>
+      </div>
+
       <main className="pb-25">
         <div className="bg-white px-4 md:px-8 pt-16 pb-8 border-b border-gray-50">
           <div className="max-w-7xl mx-auto text-center space-y-4">

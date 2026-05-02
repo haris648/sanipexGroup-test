@@ -108,7 +108,7 @@ const Filters = ({
         <div className="relative group">
           <div 
             ref={alphabetScrollRef}
-            className="flex items-center overflow-x-auto hide-scrollbar gap-2 py-2 border-t border-gray-50 pt-6"
+            className="flex items-center overflow-x-auto hide-scrollbar gap-2 py-2"
           >
             {ALPHABET.map(letter => {
               const isDisabled = !availableLetters.includes(letter);
