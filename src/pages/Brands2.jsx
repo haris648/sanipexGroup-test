@@ -48,7 +48,7 @@ function Brands2() {
   return (
     <div className="min-h-screen bg-white font-sans text-black selection:bg-black selection:text-white">
       <Header />
-      <main className="pb-32">
+      <main className="pb-25">
         <div className="bg-white px-4 md:px-8 pt-16 pb-8 border-b border-gray-50">
           <div className="max-w-7xl mx-auto text-center space-y-4">
             <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Our Partners</p>

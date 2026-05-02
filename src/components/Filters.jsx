@@ -37,15 +37,9 @@ const Filters = ({
       if (activeLetter !== letter) {
         const element = document.getElementById(`section-${letter}`);
         if (element) {
-          const offset = 220; // Approx header + filters height
-          const bodyRect = document.body.getBoundingClientRect().top;
-          const elementRect = element.getBoundingClientRect().top;
-          const elementPosition = elementRect - bodyRect;
-          const offsetPosition = elementPosition - offset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
           });
         }
       }

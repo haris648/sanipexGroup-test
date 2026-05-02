@@ -50,7 +50,7 @@ function Brands() {
   return (
     <div className="min-h-screen bg-[#fbf9f6] font-sans text-[#1f1b18] selection:bg-[#1f1b18] selection:text-[#fbf9f6]">
       <Header />
-      <main className="pb-32">
+      <main className="pb-25">
         <section
           style={{ backgroundImage: `url(${bgImage})` }}
           className="relative px-4 md:px-8 pt-20 pb-20 border-b border-[#e8e1d9] bg-gradient-to-b from-[#f6f1ea] via-[#fbf9f6] to-[#fbf9f6] bg-cover bg-center"
@@ -96,7 +96,7 @@ function Brands() {
         </section>
 
         <div className="sticky top-[73px] z-[90] shadow-sm">
-          <div className="max-w-7xl mx-auto bg-white/90 border border-[#efe6dc] rounded-2xl shadow-[0_12px_30px_rgba(31,27,24,0.06)]">
+          <div className="bg-white/90 border border-[#efe6dc] rounded-2xl shadow-[0_12px_30px_rgba(31,27,24,0.06)]">
             <Filters
               searchTerm={searchTerm}
               setSearchTerm={setSearchTerm}
