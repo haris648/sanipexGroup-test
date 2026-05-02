@@ -12,8 +12,8 @@ const Header = () => {
           className="h-8 w-auto"
         />
       </div>
-      <nav className="hidden md:flex gap-8 text-xs font-semibold uppercase tracking-widest text-gray-500">
-        <a href="#" className="hover:text-black transition-colors">About</a>
+      <nav className="md:flex gap-8 text-xs font-semibold uppercase tracking-widest text-gray-500">
+        {/* <a href="#" className="hover:text-black transition-colors">About</a> */}
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -35,12 +35,12 @@ const Header = () => {
         >
           Brands 2
         </NavLink>
-        <a href="#" className="hover:text-black transition-colors">Projects</a>
-        <a href="#" className="hover:text-black transition-colors">Contact</a>
+        {/* <a href="#" className="hover:text-black transition-colors">Projects</a>
+        <a href="#" className="hover:text-black transition-colors">Contact</a> */}
       </nav>
-      <button className="bg-black text-white px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors">
+      {/* <button className="bg-black text-white px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors">
         Enquire
-      </button>
+      </button> */}
     </header>
   );
 };

@@ -3,8 +3,6 @@ import { BRANDS } from '../data/brands';
 import BrandList from '../components/BrandList';
 import Header from '../components/Header';
 import Filters from '../components/Filters';
-import bgImage from '../assets/HOME_BRANDS_BANNER_5.webp';
-
 
 function Brands2() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -48,68 +46,32 @@ function Brands2() {
   }, [searchTerm, selectedCategories]);
 
   return (
-    <div className="min-h-screen bg-[#fbf9f6] font-sans text-[#1f1b18] selection:bg-[#1f1b18] selection:text-[#fbf9f6]">
+    <div className="min-h-screen bg-white font-sans text-black selection:bg-black selection:text-white">
       <Header />
       <main className="pb-32">
-        <section
-          style={{ backgroundImage: `url(${bgImage})` }}
-          className="relative px-4 md:px-8 pt-20 pb-20 border-b border-[#e8e1d9] bg-gradient-to-b from-[#f6f1ea] via-[#fbf9f6] to-[#fbf9f6] bg-cover bg-center"
-        >
-          <div className="absolute inset-0 bg-[#fbf9f6]/70" aria-hidden="true"></div>
-          <div className="relative z-10 max-w-7xl mx-auto grid gap-10 md:grid-cols-[1.2fr_0.8fr] items-center">
-            <div className="space-y-5">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-black">Brands Directory</p>
-              <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
-                Crafted <span className="text-white">Collections</span>
-              </h1>
-              <p className="text-sm md:text-base text-black leading-relaxed max-w-xl">
-                Explore our design-focused partners across bathrooms, kitchens, outdoor living, and architectural lighting.
-              </p>
-              <div className="flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#7a7066]">
-                <span className="px-3 py-1 border border-black rounded-full text-black">Premium</span>
-                <span className="px-3 py-1 border border-black rounded-full text-black">Global</span>
-                <span className="px-3 py-1 border border-black rounded-full text-black">Curated</span>
-              </div>
-            </div>
-            <div className="bg-white/80 backdrop-blur-md border border-[#e6ded5] rounded-2xl p-6 shadow-[0_10px_30px_rgba(31,27,24,0.08)]">
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#8a7f74] font-semibold">Snapshot</p>
-              <div className="mt-4 grid grid-cols-2 gap-4 text-[#1f1b18]">
-                <div>
-                  <p className="text-2xl font-black">{BRANDS.length}+</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Brands</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-black">4</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Segments</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-black">30+</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Markets</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-black">25+ years</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#7a7066]">Expertise</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className="sticky top-[73px] z-[90] shadow-sm">
-          <div className="max-w-7xl mx-auto bg-white/90 border border-[#efe6dc] rounded-2xl shadow-[0_12px_30px_rgba(31,27,24,0.06)]">
-            <Filters
-              searchTerm={searchTerm}
-              setSearchTerm={setSearchTerm}
-              activeLetter={activeLetter}
-              setActiveLetter={setActiveLetter}
-              selectedCategories={selectedCategories}
-              setSelectedCategories={setSelectedCategories}
-              availableLetters={availableLetters}
-            />
+        <div className="bg-white px-4 md:px-8 pt-16 pb-8 border-b border-gray-50">
+          <div className="max-w-7xl mx-auto text-center space-y-4">
+            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">Our Partners</p>
+            <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
+              World-Class <span className="text-gray-300">Brands</span>
+            </h1>
+            <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
+              Discover our curated collection of premium brands for bathrooms, kitchens, outdoor living, and architectural lighting.
+            </p>
           </div>
         </div>
 
-        <BrandList groupedBrands={groupedBrands} cardVariant="flip" />
+        <Filters
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          activeLetter={activeLetter}
+          setActiveLetter={setActiveLetter}
+          selectedCategories={selectedCategories}
+          setSelectedCategories={setSelectedCategories}
+          availableLetters={availableLetters}
+        />
+
+        <BrandList groupedBrands={groupedBrands} />
       </main>
     </div>
   );

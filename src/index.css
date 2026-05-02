@@ -63,3 +63,7 @@ body {
 .hide-scrollbar {
     scrollbar-color: #d1d5db transparent;
 }
+
+nav a{
+  padding: 0 5px;
+}
