@@ -48,7 +48,7 @@ const Filters = ({
 
   return (
     <div className="bg-white px-4 md:px-8 py-6 sticky top-[73px] z-[90] shadow-sm">
-      <div className="max-w-7xl mx-auto space-y-6">
+      <div className="max-w-[81rem] mx-auto space-y-6">
         
         {/* Search Bar */}
         <div className="relative max-w-2xl mx-auto">
