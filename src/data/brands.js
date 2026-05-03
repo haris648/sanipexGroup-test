@@ -1,8 +1,8 @@
 export const BRANDS = [
   { name: "BAGNODESIGN", category: "Bathroom", letter: "B", logo: "/BAGNODESIGN_LOGO.png" },
   { name: "AQUAECO", category: "Bathroom", letter: "A", logo: "/aquaeco.png" },
-  { name: "AXENT", category: "Bathroom", letter: "A", logo: "/AXENT_LOGO_1.jpeg" },
-  { name: "BOSSINI", category: "Bathroom", letter: "B", logo: "https://placehold.co/400x200/EEE/31343C?text=BOSSINI" },
+  { name: "AXENT", category: "Bathroom", letter: "A", logo: "/AXENT_LOGO_1.png" },
+  { name: "BONGIO", category: "Bathroom", letter: "B", logo: "/BONGIO_LOGO.png" },
   { name: "DYSON", category: "Bathroom", letter: "D", logo: "https://placehold.co/400x200/EEE/31343C?text=DYSON" },
   { name: "GEBERIT", category: "Bathroom", letter: "G", logo: "https://placehold.co/400x200/EEE/31343C?text=GEBERIT" },
   { name: "HANSGROHE", category: "Bathroom", letter: "H", logo: "https://placehold.co/400x200/EEE/31343C?text=HANSGROHE" },
